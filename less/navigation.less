@@ -1,48 +1,73 @@
 // Navigation Styles here
 
-.fun-bus{
+
+.fun-bus {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin: 4% 0;
+  margin-bottom: 5%;
+  justify-content: space-between;
+
+  @media @mobile {
     width:100%;
     display: flex;
-    align-items: center;
-    padding-left: 4%;
-    padding-right: 4%;
-    margin:4% 0;
-    margin-bottom: 5%;
-    justify-content: space-between;
+    flex-direction: column;
+    margin:0 auto;
 
-    .nav-links{
-        display: flex;
-        width:100%;
-        
-        .home{
-            .margin();
-        }
-        .aboutus{
-            .margin();
-        }
-        .blog{
-            .margin();
-        }
-    }
-    a{
-        text-decoration: none;
-        color: black; 
-        font-size: 1.5rem;
-    }
-}
-.bus-fun{
+  }
+  
+  .nav-links {
     display: flex;
     width: 100%;
-    margin:0 auto;
-    padding-right: 4%;
-    padding-left: 4%;
-    // align-items: center;
-    // border-top: 2px dashed grey;
 
-    
+    @media @mobile {
+      margin-top: 2%;
+      margin-bottom: 2%;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .home {
+      .margin();
+    }
+    .aboutus {
+      .margin();
+    }
+    .blog {
+      .margin();
+    }
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
 }
 
-.line{
-    width: 100%;
-    border: 1.5px dashed grey;
+.bus-fun {
+  width: 100%;
+  margin: 0 auto;
+  padding-right: 5%;
+  padding-left: 5%;
+
+  @media @mobile{
+      width:100%;
+      padding-right: 10%;
+      padding-left: 10%;
+      
+      
+
+
+  }
+  
+}
+
+.line {
+  width: 100%;
+  border: 1.5px dashed grey;
+
+
 }
