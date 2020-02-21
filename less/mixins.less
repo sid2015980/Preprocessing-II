@@ -1,13 +1,18 @@
 // Mixins in here
 
-.custom-btn(@bg-color, @width, @font-color){
-    display: block;
+.my-button(@bg-color, @width, @btn-fnt-color) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: @bg-color;
-    margin: 0 10px 20px;
     cursor: pointer;
     width: @width;
-    height: 20px;
+    height: 30px;
     font-size: 1.5rem;
     border-radius: 10px;
-    color:@font-color;
+    color:@btn-fnt-color;
+}
+
+.margin{
+    margin-right: 20px;
 }

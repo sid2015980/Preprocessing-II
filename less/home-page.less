@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    .welcome-content{
+border-bottom: 2px dashed gray;
+    }
+
     .text-content {
       width: 48%;
       padding-right: 1%;
@@ -31,6 +35,7 @@
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      margin-bottom: 4%;
     }
   }
 
@@ -52,18 +57,10 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-    .one {
-      .custom-btn();
-    }
-    .two {
-      .custom-btn();
-    }
-    .three {
-      .custom-btn();
+
     }
     .btn{
-      .custom-btn();
+      .my-button(@bg-color, @width, @btn-fnt-color);
     }
   }
 } // home
