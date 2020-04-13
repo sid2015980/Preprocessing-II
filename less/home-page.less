@@ -7,38 +7,34 @@
     padding-right: 5%;
     justify-content: space-between;
 
-    @media @mobile{
+    @media @mobile {
       display: flex;
       flex-direction: column;
       align-content: center;
       align-items: center;
       justify-content: center;
-      width:100%;
+      width: 100%;
     }
 
-    .welcome-content{
-border-bottom: 2px dashed gray;
+    .welcome-content {
+      border-bottom: 2px dashed gray;
     }
 
     .text-content {
       width: 48%;
       padding-right: 1%;
 
-      @media @mobile{
-        width:100%;
-        
-
-        }
+      @media @mobile {
+        width: 100%;
       }
-    
+    }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
-      @media @mobile{
-        width:100%;
-        
+      @media @mobile {
+        width: 100%;
       }
 
       img {
@@ -52,20 +48,19 @@ border-bottom: 2px dashed gray;
     padding-right: 5%;
     border-bottom: 2px dashed @navigation-border;
 
-
-    @media @mobile{
-      width:100%;
-     
+    @media @mobile {
+      width: 100%;
+      display: flex;
+      flex-direction: column-reverse;
     }
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
 
-      @media @mobile{
-        width:100%;
+      @media @mobile {
+        width: 100%;
         margin-bottom: 5%;
-        
       }
     }
 
@@ -74,10 +69,8 @@ border-bottom: 2px dashed gray;
       padding-left: 0;
       margin-bottom: 4%;
 
-      @media @mobile{
-        width:100%;
-        
-        
+      @media @mobile {
+        width: 100%;
       }
     }
   }
@@ -86,12 +79,9 @@ border-bottom: 2px dashed gray;
     width: 75%;
     margin: 0 auto 30px;
 
-    @media @mobile{
-      width:100%;
-      
-  
+    @media @mobile {
+      width: 100%;
     }
-    
 
     img {
       border-radius: 10px;
@@ -104,34 +94,28 @@ border-bottom: 2px dashed gray;
     display: flex;
     justify-content: space-between;
 
-    @media @mobile{
-      width:100%;
+    @media @mobile {
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       // align-content: center;
       // justify-content: center;
-  
     }
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
-      @media @mobile{
-        width:80%;
-        
-    
+      @media @mobile {
+        width: 80%;
       }
-
     }
-    .btn{
+    .btn {
       .my-button(@bg-color, @width, @btn-fnt-color);
 
-      @media @mobile{
-        width:100%;
-        
-    
+      @media @mobile {
+        width: 100%;
       }
     }
   }

@@ -137,14 +137,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
   font-weight: bold;
 }
 h1 {
@@ -170,8 +170,9 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+  margin: auto;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 @media (max-width: 500px) {
   .container {
@@ -181,13 +182,10 @@ img {
   }
 }
 .fun-bus {
-  width: 100%;
+  max-width: 600px;
   display: flex;
   align-items: center;
-  padding-left: 5%;
-  padding-right: 5%;
-  margin: 4% 0;
-  margin-bottom: 5%;
+  margin: 4% auto;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
@@ -225,10 +223,8 @@ img {
   font-size: 1.5rem;
 }
 .bus-fun {
-  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
-  padding-right: 5%;
-  padding-left: 5%;
 }
 @media (max-width: 500px) {
   .bus-fun {
@@ -302,6 +298,8 @@ img {
 @media (max-width: 500px) {
   .home .inverse-content {
     width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
   }
 }
 .home .inverse-content .text-content {
